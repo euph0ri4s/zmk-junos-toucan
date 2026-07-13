@@ -16,7 +16,7 @@
 #define BT    10
 
 
-define COMBO(NAME, LAYER, TIMEOUT, KEYPOS) \
+#define COMBO(NAME, LAYER, TIMEOUT, KEYPOS) \
     combo_##NAME { \
         layers = <LAYER>; \
         timeout-ms = <TIMEOUT>; \

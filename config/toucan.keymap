@@ -76,7 +76,7 @@
       layers = <LAYER>; \
       timeout-ms = <TIMEOUT>; \
       key-positions = <KEYPOS>; \
-      bindings = <&lt NAME>; \
+      bindings = <&to NAME>; \
   };
 
 &lt {

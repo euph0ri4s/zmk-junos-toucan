@@ -184,8 +184,8 @@
        compatible = "zmk,combos";
 
        COMBO(Q,          0 1, 55, 10 20)
-       MCOMBO(yu           0, 55, 10 11)
-       MCOMBO(YUU          0, 55, 10 11 12)
+       MCOMBO(yu,          0, 55, 10 11)
+       MCOMBO(yuu,         0, 55, 10 11 12)
        COMBO(F,          0 1, 55, 11 12)
        COMBO(W,          0 1, 55, 11 21)
        COMBO(P,          0 1, 45, 12 13)
@@ -199,10 +199,10 @@
        COMBO(F19,          5, 50,  8 18)
        COMBO(F20,          5, 50,  9 19)
        COMBO(U,          0 1, 45, 16 17)
-       MCOMBO(yo           0, 55, 16 17 18)
+       MCOMBO(yo,          0, 55, 16 17 18)
        COMBO(F13,          5, 50, 16 26)
        COMBO(Y,          0 1, 65, 17 18)
-       MCOMBO(you          0, 55, 17 18 19)
+       MCOMBO(you,         0, 55, 17 18 19)
        COMBO(F14,          5, 50, 17 27)
        COMBO(F15,          5, 50, 18 28)
        COMBO(F16,          5, 50, 19 29)

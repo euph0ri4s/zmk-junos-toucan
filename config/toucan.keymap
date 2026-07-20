@@ -137,6 +137,15 @@
          		;
              };
 
+             yo: yo {
+               label = "yo";
+               compatible = "zmk,behavior-macro";
+               #binding-cells = <0>;
+               bindings
+                = <&macro_tap &kp Y>
+                , <&macro_tap &kp O>
+                ;
+             };
              ou: ou {
                label = "ou";
                compatible = "zmk,behavior-macro";
@@ -199,11 +208,12 @@
        COMBO(F19,          5, 50,  8 18)
        COMBO(F20,          5, 50,  9 19)
        COMBO(U,          0 1, 45, 16 17)
-       MCOMBO(yo,          0, 55, 16 17 18)
+       MCOMBO(ou,          0, 55, 16 17 18)
        COMBO(F13,          5, 50, 16 26)
        COMBO(Y,          0 1, 65, 17 18)
        MCOMBO(you,         0, 55, 17 18 19)
        COMBO(F14,          5, 50, 17 27)
+       MCOMBO(yo,          0, 55, 18 19)
        COMBO(F15,          5, 50, 18 28)
        COMBO(F16,          5, 50, 19 29)
        COMBO(M,          0 1, 50, 26 27)

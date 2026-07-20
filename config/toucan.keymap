@@ -229,7 +229,7 @@
        COMBO(P,            0 1, 45, 12 13)
        COMBO(G,            0 1, 50, 13 23)
        COMBO(ESC,          0 1, 45, 20 21)
-       MTMCOMBO(ESC,escla, 0 1, 55, 20 21 22)
+       MTMCOMBO(escla,ESC, 0 1, 55, 20 21 22)
        LCOMBO(BASEJP,        0, 35, 20 21 22 23)
        COMBO(B,            0 1, 60, 21 22)
        COMBO(V,            0 1, 60, 22 23)

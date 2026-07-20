@@ -145,7 +145,7 @@
                 = <&macro_tap &kp O>
                 , <&macro_tap &kp U>
                 ;
-             }
+             };
 
              you: you {
                label = "you";
@@ -156,7 +156,7 @@
                 , <&macro_tap &kp O>
                 , <&macro_tap &kp U>
                 ;
-             }
+             };
 
              yu: yu {
                label = "yu";
@@ -166,7 +166,7 @@
                 = <&macro_tap &kp Y>
                 , <&macro_tap &kp U>
                 ;
-             }
+             };
 
              yuu: yuu {
                label = "yuu";
@@ -177,7 +177,7 @@
                 , <&macro_tap &kp U>
                 , <&macro_tap &kp U>
                 ;
-             }
+             };
      };
 
      combos {

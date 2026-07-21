@@ -292,7 +292,7 @@
        COMBO(F15,       &kp F15,          5, 50, 18 28)
        COMBO(F16,       &kp F16,          5, 50, 19 29)
        COMBO(M,         &kp M,          0 1, 50, 26 27)
-       LCOMBO(BASE,     &to BASE,         1, 35, 26 27 28 29)
+       COMBO(BASE,      &to BASE,         1, 35, 26 27 28 29)
        COMBO(DEL,       &kp DEL,        0 1, 55, 26 29)
        COMBO(caps_word, &caps_word,     0 1, 55, 28 29)
 

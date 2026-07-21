@@ -164,6 +164,7 @@
                #binding-cells = <0>;
                bindings
                 = <&macro_tap &sk LS(LCTRL)>
+                ;
              };
 
              yo: yo {

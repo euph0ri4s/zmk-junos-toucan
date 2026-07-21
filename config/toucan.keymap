@@ -80,6 +80,22 @@
       bindings = <&to NAME>; \
   };
 
+#define SCOMBO(NAME, LAYER, TIMEOUT, KEYPOS) \
+    combo_##NAME { \
+      layers = <LAYER>; \
+      timeout-ms = <TIMEOUT>; \
+      key-positions = <KEYPOS>; \
+      bindings = <&sk NAME>; \
+    };
+
+#define BCOMBO(NAME, BIND, LAYER, TIMEOUT, KEYPOS) \
+  combo_##NAME { \
+    layers = <LAYER>; \
+    timeout-ms = <TIMEOUT>; \
+    key-positions = <KEYPOS>; \
+    bindings = <BIND>; \
+  };
+
 &mt {
     tapping-term-ms = <200>;
 };
@@ -139,6 +155,15 @@
          		, <&macro_pause_for_release>
          		, <&macro_release &sk LS(LA(LC(LGUI)))>
          		;
+             };
+
+             // macro for Ctrl + Shift
+             mcs: mcs {
+               label = "mcs";
+               compatible = "zmk,behavior-macro";
+               #binding-cells = <0>;
+               bindings
+                = <&macro_tap &sk LS(LCTRL)>
              };
 
              yo: yo {
@@ -219,6 +244,7 @@
        MCOMBO(ou,          0 1, 55, 16 17 18)
        MCOMBO(meh,         0 1, 35, 16 17 18 19)
        COMBO(F13,            5, 50, 16 26)
+       RCOMBO(SKCS, &sk LS(LCTRL), 0 1, 55, 16 17 34) //stickey key Ctrl+Shift
        COMBO(Y,            0 1, 65, 17 18)
        MCOMBO(you,         0 1, 55, 17 18 19)
        COMBO(F14,            5, 50, 17 27)

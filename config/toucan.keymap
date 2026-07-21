@@ -97,14 +97,6 @@
             hold-trigger-on-release;
         };
 
-        mescla: modtap_escla {
-          compatible = "zmk,behavior-hold-tap";
-          #binding-cells = <2>;
-          tapping-term-ms = <200>;
-          quick_tap_ms = <0>;
-          bindings = <&escla>, <&kp>;
-        };
-    };
     
      macros {
              meh: meh {
@@ -140,6 +132,16 @@
                 ;
              };
 
+             // macro tap esc hold esc and eisu
+             esceis: esceis {
+               label = "esceic";
+               compatible = "zmk,behavior-macro";
+               #binding-cells = <0>;
+               bindings
+                = <&macro_tap &kp ESC>
+                , <&macro_tap &kp JP_EISU>
+                ;
+             };
              // macro for Ctrl + Shift
              mcs: mcs {
                label = "mcs";
@@ -327,7 +329,7 @@
           &kp Z             &kp X             &kp C             &kp D            &kp COMMA           &kp DOT           &kp H             &kp J             &kp K            &kp L
       // ├─────────────────┼─────────────────┼─────────────────┬────────────────┼─────────────────┤ ├─────────────────┼─────────────────┼─────────────────┬────────────────┼─────────────────┤
       //                        ╭─────────────────────┬─────────────────────┬─────────────────────╮ ╭─────────────────────┬─────────────────────┬─────────────────────╮
-                                 &mescla ESC 0         &kp SPACE             &lt NAV BSPC            &lt SYM TAB           &lt NUM ENTER         &meh
+                                 &esceis               &kp SPACE             &lt NAV BSPC            &lt SYM TAB           &lt NUM ENTER         &meh
       //                        ╰─────────────────────┴─────────────────────┴─────────────────────╯ ╰─────────────────────┴─────────────────────┴─────────────────────╯
       >;
     };
@@ -343,7 +345,7 @@
           &kp Z             &kp X             &kp C             &kp D            &kp COMMA           &kp DOT           &kp H             &kp J             &kp K            &kp L
       // ├─────────────────┼─────────────────┼─────────────────┬────────────────┼─────────────────┤ ├─────────────────┼─────────────────┼─────────────────┬────────────────┼─────────────────┤
       //                        ╭─────────────────────┬─────────────────────┬─────────────────────╮ ╭─────────────────────┬─────────────────────┬─────────────────────╮
-                                 &kp LSHFT             &kp SPACE             &lt NAV BSPC            &lt SYMJP TAB         &lt NUM ENTER         &meh
+                                 &escla                &kp SPACE             &lt NAV BSPC            &lt SYMJP TAB         &lt NUM ENTER         &meh
       //                        ╰─────────────────────┴─────────────────────┴─────────────────────╯ ╰─────────────────────┴─────────────────────┴─────────────────────╯
       >;
     };

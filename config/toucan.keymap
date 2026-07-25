@@ -261,10 +261,12 @@
      combos {
        compatible = "zmk,combos";
 
-       COMBO(yu,        &yu,            0 1, 55, 10 11)
+       COMBO(yu,        &yu,            0 1, 45, 10 11)
+       COMBO(hyper,     &hyper,         0 1, 45, 10 11 12 13)
+       COMBO(JP_CAPS,   &kp JP_CAPS,      1, 45, 10 13)
        COMBO(Q,         &kp Q,          0 1, 55, 10 20)
-       COMBO(F,         &kp F,          0 1, 55, 11 12)
-       COMBO(yuu,       &yuu,           0 1, 55, 11 12 13)
+       COMBO(F,         &kp F,          0 1, 45, 11 12)
+       COMBO(yuu,       &yuu,           0 1, 45, 11 12 13)
        COMBO(W,         &kp W,          0 1, 55, 11 21)
        COMBO(P,         &kp P,          0 1, 45, 12 13)
        COMBO(G,         &kp G,          0 1, 50, 13 23)
@@ -278,7 +280,7 @@
        COMBO(F19,       &kp F19,          5, 50,  8 18)
        COMBO(F20,       &kp F20,          5, 50,  9 19)
        COMBO(U,         &kp U,          0 1, 45, 16 17)
-       COMBO(mcs,       &mcs,             5, 55, 16 17)        // stickey key Shift+Ctrl in num_layer
+       COMBO(mcs,       &mcs,             5, 45, 16 17)        // stickey key Shift+Ctrl in num_layer
        COMBO(ou,        &ou,            0 1, 55, 16 17 18)
        COMBO(meh,       &meh,           0 1, 35, 16 17 18 19)
        COMBO(F13,       &kp F13,          5, 50, 16 26)
@@ -288,9 +290,10 @@
        COMBO(SKSG,      &msg,           0 1, 55, 16 19 31)     // stickey key Shift+Gui
        COMBO(Y,         &kp Y,          0 1, 65, 17 18)
        COMBO(you,       &you,           0 1, 55, 17 18 19)
-       COMBO(F14,       &kp F14,          5, 50, 17 27)
        COMBO(SKCA,      &mca,           0 1, 55, 17 18 31)     // stickey key Ctrl+Alt
        COMBO(SKCG,      &mcg,           0 1, 55, 17 19 31)     // stickey key Ctrl+Gui
+       COMBO(F14,       &kp F14,          5, 50, 17 27)
+       COMBO(SKCT,      &sk LCTRL,      0 1, 45, 17 31)        // stickey key Ctrl
        COMBO(yo,        &yo,            0 1, 55, 18 19)
        COMBO(F15,       &kp F15,          5, 50, 18 28)
        COMBO(F16,       &kp F16,          5, 50, 19 29)
@@ -299,7 +302,7 @@
        COMBO(DEL,       &kp DEL,        0 1, 55, 26 29)
        COMBO(caps_word, &caps_word,     0 1, 55, 28 29)
 
-       COMBO(LANG2,     &kp LANG2,        1, 55, 31 34)
+       COMBO(JP_ZKHK,   &kp JP_ZKHK,    0 1, 55, 31 34)
        COMBO(LSHFT,     &kp LSHFT,      0 1, 55, 32 33)
 
      };

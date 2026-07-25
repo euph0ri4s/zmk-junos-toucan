@@ -252,7 +252,7 @@
                #binding-cells = <0>;
                bindings
                 = <&macro_tap &kp Y>
-                , <&macro_tap &kp U>
+                4, <&macro_tap &kp U>
                 , <&macro_tap &kp U>
                 ;
              };
@@ -299,7 +299,7 @@
        COMBO(DEL,       &kp DEL,        0 1, 55, 26 29)
        COMBO(caps_word, &caps_word,     0 1, 55, 28 29)
 
-       COMBO(JP_ZKHK,   &kp JP_ZKHK,    0 1, 55, 31 34)
+       COMBO(LANG2,     &kp LANG2,        1, 55, 31 34)
        COMBO(LSHFT,     &kp LSHFT,      0 1, 55, 32 33)
 
      };

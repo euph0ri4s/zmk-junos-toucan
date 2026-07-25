@@ -252,7 +252,7 @@
                #binding-cells = <0>;
                bindings
                 = <&macro_tap &kp Y>
-                4, <&macro_tap &kp U>
+                , <&macro_tap &kp U>
                 , <&macro_tap &kp U>
                 ;
              };

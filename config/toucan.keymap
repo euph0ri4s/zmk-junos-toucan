@@ -305,8 +305,8 @@
        COMBO(DEL,       &kp DEL,        0 1, 55, 26 29)
        COMBO(caps_word, &caps_word,     0 1, 55, 28 29)
 
-       COMBO(JP_ZKHK,   &kp JP_ZKHK,    0 1, 55, 31 34)
-       COMBO(bothmeh,   &meh,           0 1, 55, 32 33)
+       COMBO(bothmeh,   &meh,           0 1, 55, 31 34)
+       COMBO(JP_ZKHK,   &kp JP_ZKHK,    0 1, 55, 32 33)
 
      };
 

@@ -282,8 +282,8 @@
        COMBO(U,         &kp U,          0 1, 35, 16 17)
        COMBO(mcs,       &mcs,             5, 45, 16 17)        // stickey key Shift+Ctrl in num_layer
        COMBO(ou,        &ou,            0 1, 55, 16 17 18)
-       COMBO(smeh,      &meh,           0 1, 40, 16 17 18 34)  // stickey key Shift+Ctrl+Alt
-       COMBO(meh,       &meh,           0 1, 35, 16 17 18 19)  // stickey key Shift+Ctrl+Alt
+       COMBO(rmeh,      &meh,           0 1, 40, 16 17 18 34)  // stickey key Shift+Ctrl+Alt
+       // COMBO(meh,       &meh,           0 1, 35, 16 17 18 19)  // stickey key Shift+Ctrl+Alt
        COMBO(SKCS,      &mcs,           0 1, 55, 16 17 34)     // stickey key Shift+Ctrl
        COMBO(F13,       &kp F13,          5, 50, 16 26)
        COMBO(SKSH,      &sk LSHFT,      0 1, 55, 16 34)        // stickey key Shift
@@ -306,7 +306,7 @@
        COMBO(caps_word, &caps_word,     0 1, 55, 28 29)
 
        COMBO(JP_ZKHK,   &kp JP_ZKHK,    0 1, 55, 31 34)
-       COMBO(LSHFT,     &kp LSHFT,      0 1, 55, 32 33)
+       COMBO(bothmeh,   &meh,           0 1, 55, 32 33)
 
      };
 

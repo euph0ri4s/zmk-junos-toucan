@@ -282,10 +282,11 @@
        COMBO(U,         &kp U,          0 1, 35, 16 17)
        COMBO(mcs,       &mcs,             5, 45, 16 17)        // stickey key Shift+Ctrl in num_layer
        COMBO(ou,        &ou,            0 1, 55, 16 17 18)
-       COMBO(meh,       &meh,           0 1, 35, 16 17 18 19)
+       COMBO(smeh,      &meh,           0 1, 40, 16 17 18 34)  // stickey key Shift+Ctrl+Alt
+       COMBO(meh,       &meh,           0 1, 35, 16 17 18 19)  // stickey key Shift+Ctrl+Alt
+       COMBO(SKCS,      &mcs,           0 1, 55, 16 17 34)     // stickey key Shift+Ctrl
        COMBO(F13,       &kp F13,          5, 50, 16 26)
        COMBO(SKSH,      &sk LSHFT,      0 1, 55, 16 34)        // stickey key Shift
-       COMBO(SKCS,      &mcs,           0 1, 55, 16 17 34)     // stickey key Shift+Ctrl
        COMBO(SKSA,      &msa,           0 1, 55, 16 18 34)     // stickey key Shift+Alt
        COMBO(SKSG,      &msg,           0 1, 55, 16 19 34)     // stickey key Shift+Gui
        COMBO(Y,         &kp Y,          0 1, 65, 17 18)
@@ -296,7 +297,9 @@
        COMBO(SKCT,      &sk LCTRL,      0 1, 45, 17 34)        // stickey key Ctrl
        COMBO(yo,        &yo,            0 1, 55, 18 19)
        COMBO(F15,       &kp F15,          5, 50, 18 28)
+       COMBO(SKAL,      &sk LALT,       0 1, 50, 18 34)        // stickey key Alt
        COMBO(F16,       &kp F16,          5, 50, 19 29)
+       COMBO(SKGU,      &sk LGUI,       0 1, 50, 19 34)        // stickey key Gui
        COMBO(M,         &kp M,          0 1, 50, 26 27)
        COMBO(BASE,      &to BASE,         1, 35, 26 27 28 29)
        COMBO(DEL,       &kp DEL,        0 1, 55, 26 29)
